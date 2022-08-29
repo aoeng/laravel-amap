@@ -1,0 +1,40 @@
+{
+    "name": "aoeng/laravel-amap",
+    "description": "高德地图接口",
+    "keywords": [
+        "amap",
+        "gaode",
+        "laravel"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dang",
+            "email": "yofengge@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aoeng\\Laravel\\Amap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Aoeng\\Laravel\\Amap\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aoeng\\Laravel\\Amap\\AmapServiceProvider"
+            ],
+            "aliases": {
+                "Amap": "Aoeng\\Laravel\\Amap\\Facades\\Amap"
+            }
+        }
+    }
+}
