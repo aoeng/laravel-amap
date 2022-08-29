@@ -1,23 +1,19 @@
-## 美团分销联盟 Laravel 扩展
+## 高德地图接口
 
 ### Install
 
 ```bash 
-composer require aoeng/laravel-meituan
+composer require aoeng/laravel-amap
 
-php artisan vendor:publish --tag=meituan
+php artisan vendor:publish --tag=laravel-amap
 ```
 
 
 ### Used
 ```php
-use \Aoeng\Laravel\Amap\Facades\MeituanPub;
+use \Aoeng\Laravel\Amap\Facades\Amap;
 
-// 这个分销联盟做的太拉跨了
-MeituanPub::activities();
-MeituanPub::link();
-MeituanPub::cpaOrders();
-MeituanPub::request();
+Amap::weather(10001);
 
 ```
 
